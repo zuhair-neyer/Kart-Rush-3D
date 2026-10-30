@@ -4,16 +4,7 @@
 
 **Kart Rush 3D** is a 3D browser-based arcade kart racing game featuring exciting races, AI opponents, dynamic driving mechanics, drifting, power-ups, and immersive racing environments.
 
-Choose your kart, select your track, compete against rivals, master your driving skills, and race towards victory!
-
-<p align="center">
-  <a href="https://github.com/zuhair-neyer/Kart-Rush-3D">
-    <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github" alt="GitHub Repository">
-  </a>
-  <img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript" alt="JavaScript">
-  <img src="https://img.shields.io/badge/Three.js-3D%20Engine-black?style=for-the-badge&logo=threedotjs" alt="Three.js">
-  <img src="https://img.shields.io/badge/Vite-Powered-646CFF?style=for-the-badge&logo=vite" alt="Vite">
-</p>
+Choose your kart, select your track, compete against rivals, collect coins, master your drifts, and race towards victory!
 
 ---
 
@@ -21,7 +12,7 @@ Choose your kart, select your track, compete against rivals, master your driving
 
 Kart Rush 3D brings the excitement of arcade kart racing directly to your browser.
 
-Enjoy a complete racing experience with responsive controls, competitive opponents, colorful environments, and exciting gameplay mechanics.
+Enjoy an engaging racing experience with responsive driving controls, competitive AI opponents, colorful environments, and exciting gameplay mechanics.
 
 Whether you're drifting around corners, collecting power-ups, or fighting for first place, every race is a new challenge.
 
@@ -29,9 +20,9 @@ Whether you're drifting around corners, collecting power-ups, or fighting for fi
 
 - 🏎️ **3D Kart Racing** – Immersive third-person racing experience.
 - 🧠 **AI Opponents** – Compete against computer-controlled racers.
-- 💨 **Drifting Mechanics** – Master corners and gain speed boosts.
+- 💨 **Drifting Mechanics** – Slide through corners and gain speed boosts.
 - ⚡ **Power-Ups** – Use special abilities during races.
-- 🪙 **Collectible Coins** – Gather rewards while racing.
+- 🪙 **Collectible Coins** – Gather coins throughout your races.
 - 🌍 **Multiple Tracks** – Explore different racing environments.
 - 🎨 **Kart Customization** – Personalize your racing experience.
 - 🏁 **Multiple Game Modes** – Enjoy different racing challenges.
@@ -47,25 +38,11 @@ Whether you're drifting around corners, collecting power-ups, or fighting for fi
 |---|---|
 | HTML5 | Game structure |
 | CSS3 | Interface and styling |
-| JavaScript | Game logic |
+| JavaScript | Game logic and mechanics |
 | Three.js | 3D graphics and rendering |
 | Vite | Development and build tooling |
 
-## 📸 Screenshots
-
-Screenshots of Kart Rush 3D can be added here.
-
-To add a screenshot:
-
-1. Create a `screenshots` folder in the project root.
-2. Place your game screenshots inside it.
-3. Reference them using Markdown:
-
-```markdown
-![Kart Rush 3D Gameplay](screenshots/gameplay.png)
-```
-
-## 🚀 Installation & Setup
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -75,33 +52,35 @@ Make sure you have installed:
 - npm
 - Git (optional)
 
-### 1. Clone the repository
+### Installation
+
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/zuhair-neyer/Kart-Rush-3D.git
 ```
 
-### 2. Open the project directory
+**2. Navigate to the project directory**
 
 ```bash
 cd Kart-Rush-3D
 ```
 
-### 3. Install dependencies
+**3. Install dependencies**
 
 ```bash
 npm install
 ```
 
-### 4. Start the development server
+**4. Start the development server**
 
 ```bash
 npm run dev
 ```
 
-### 5. Open the game
+**5. Open the game**
 
-Open the local URL displayed in your terminal, usually:
+Visit the local URL displayed in your terminal, usually:
 
 ```text
 http://localhost:5173
@@ -122,33 +101,41 @@ You're ready to race!
 | Escape | Pause |
 | R | Reset Kart |
 
-*Controls may vary depending on the implemented input configuration.*
+## 🏁 Game Modes
 
-## 🏁 Game Modes & Tracks
+Explore different racing experiences:
 
-Kart Rush 3D offers different racing experiences and environments.
+- **Quick Race** – Jump straight into competitive racing.
+- **Grand Prix** – Compete across multiple races for championship points.
+- **Time Trial** – Challenge yourself to beat your best lap times.
 
-Explore the available game modes, select your preferred track, and challenge yourself to achieve the best results.
+## 🌍 Tracks
+
+Discover different racing environments:
+
+- **Green Valley** – A beautiful circuit surrounded by nature.
+- **Sunset Coast** – A tropical seaside racing experience.
+- **Neon City** – A futuristic track filled with glowing lights.
+- **Lava Peak** – A challenging volcanic racing environment.
 
 ## 📁 Project Structure
 
 ```text
 Kart-Rush-3D/
 │
-├── dist/              # Production build output
-├── node_modules/      # Installed dependencies
-│
+├── dist/              # Production build
+├── node_modules/      # Dependencies
 ├── public/            # Static assets
-├── src/               # Main application source code
+├── src/               # Application source code
 ├── tests/             # Project tests
 │
 ├── .gitignore
 ├── index.html
-├── netlify.toml       # Netlify configuration (if applicable)
+├── netlify.toml
 ├── package.json
 ├── package-lock.json
-├── vercel.json        # Vercel configuration (if applicable)
-└── vite.config.js     # Vite configuration
+├── vercel.json
+└── vite.config.js
 ```
 
 ## 📦 Production Build
@@ -159,42 +146,28 @@ Create an optimized production build:
 npm run build
 ```
 
-The generated files will be available inside:
-
-```text
-dist/
-```
-
-To preview the production build:
+To preview the production build locally:
 
 ```bash
 npm run preview
 ```
 
-## 🌐 Deployment
+## 💻 Performance
 
-Kart Rush 3D can be deployed using platforms that support Vite applications.
+Kart Rush 3D uses Three.js and WebGL for real-time 3D rendering.
 
-### Vercel
+For the best experience:
 
-1. Import the GitHub repository into Vercel.
-2. Select the Vite framework preset.
-3. Set the build command to `npm run build`.
-4. Set the output directory to `dist`.
-5. Deploy!
-
-### Netlify
-
-1. Connect your GitHub repository.
-2. Set the build command to `npm run build`.
-3. Set the publish directory to `dist`.
-4. Deploy your website.
+- Use an up-to-date web browser.
+- Enable hardware acceleration.
+- Close unnecessary background applications.
+- Use a device with WebGL-compatible graphics.
 
 ## 🤝 Contributing
 
-Contributions, suggestions, and bug reports are welcome!
+Suggestions, improvements, and bug reports are welcome!
 
-1. Fork this repository.
+1. Fork the repository.
 2. Create a new branch.
 3. Make your changes.
 4. Commit your changes.
@@ -208,18 +181,22 @@ This project is currently provided without an explicit open-source license. All 
 
 **Created by Zuhair**
 
-A project built with creativity, passion, and a love for gaming and development.
+Kart Rush 3D is built with creativity, passion, and a love for gaming and technology.
 
-### 🔗 Repository
+**Developer:** Zuhair
 
-https://github.com/zuhair-neyer/Kart-Rush-3D
+**GitHub:** [@zuhair-neyer](https://github.com/zuhair-neyer)
+
+**Repository:** [Kart-Rush-3D](https://github.com/zuhair-neyer/Kart-Rush-3D)
 
 ---
 
 <p align="center">
-  <strong>🏎️ KART RUSH 3D</strong>
-  <br>
-  Race Fast. Drift Hard. Win Big.
-  <br><br>
-  Made with ❤️ by Zuhair
+
+# 🏁 KART RUSH 3D
+
+### Race Fast. Drift Hard. Win Big.
+
+**Made with ❤️ by Zuhair**
+
 </p>
